@@ -1,0 +1,21 @@
+# Netlify konfiqurasiyası — DP frontend
+# Bu fayl repo kökündə yerləşir və Netlify deploy üçün nəzərdə tutulub.
+
+[build]
+  command = "node netlify-build.js"
+  publish = "."
+
+# Bütün səhifələr üçün sadə qaydalar
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"

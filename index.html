@@ -1,0 +1,313 @@
+ 
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexora — Paket və hesab məlumatları</title>
+<meta name="description" content="Nexora paketlərinin qiymətləri, gündəlik hesablanma məbləğləri və ödəniş prosesini aydın şəkildə nəzərdən keçirin." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-grid"></div>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">N</span>
+      <span>Nexora</span>
+    </a>
+    <nav class="nav-links" aria-label="Əsas naviqasiya">
+      <a href="index.html#paketler">Paketlər</a>
+      <a href="index.html#nece-isleyir">Necə işləyir</a>
+      <a href="index.html#reyler">Məlumatlar</a>
+      <a href="faq.html">FAQ</a>
+      <a href="elaqe.html">Əlaqə</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost">Daxil ol</a>
+      <a href="index.html#paketler" class="btn btn-primary">Paketi al</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menyunu aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <a href="index.html#paketler">Paketlər</a>
+  <a href="index.html#nece-isleyir">Necə işləyir</a>
+  <a href="index.html#reyler">Məlumatlar</a>
+  <a href="faq.html">FAQ</a>
+  <a href="elaqe.html">Əlaqə</a>
+  <a href="login.html">Daxil ol</a>
+  <a href="index.html#paketler" style="color: var(--accent);">Paketi al</a>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="ana">
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <span class="badge reveal"><span class="dot"></span> Paketlər və hesab məlumatları</span>
+        <h1 class="reveal reveal-delay-1">Şərtləri əvvəlcədən <span class="highlight">aydın görün</span></h1>
+        <p class="lead reveal reveal-delay-2">Paket qiymətlərini, gündəlik hesablanma məbləğlərini və ödəniş təsdiqi prosesini bir yerdə nəzərdən keçirin.</p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="index.html#paketler" class="btn btn-primary btn-lg">Paketləri müqayisə et
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="istifade-sertleri.html" class="btn btn-ghost btn-lg">İstifadə şərtləri</a>
+        </div>
+        <p class="hero-caption reveal reveal-delay-3">Ödəniş etməzdən əvvəl paket və çıxarış şərtlərini diqqətlə oxuyun.</p>
+      </div>
+
+      <aside class="hero-summary reveal reveal-delay-1" aria-label="Platforma haqqında qısa məlumat">
+        <div class="hero-summary-head">
+          <div>
+            <span class="hero-summary-kicker">QISA MƏLUMAT</span>
+            <h2>Proses necə işləyir?</h2>
+          </div>
+          <span class="hero-summary-mark">AZN</span>
+        </div>
+        <div class="hero-summary-list">
+          <div class="hero-summary-row"><span>Paket qiymətləri</span><strong>13–200 AZN</strong></div>
+          <div class="hero-summary-row"><span>Aktivləşmə</span><strong>Təsdiqdən sonra</strong></div>
+          <div class="hero-summary-row"><span>İlk gündəlik məbləğ</span><strong>Təsdiq zamanı</strong></div>
+          <div class="hero-summary-row"><span>Sonrakı hesablanma</span><strong>Gündəlik</strong></div>
+        </div>
+        <a class="hero-summary-link" href="index.html#nece-isleyir">Prosesin detalları <span aria-hidden="true">→</span></a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="xususiyyetler">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge">Platforma haqqında</span>
+        <h2>Nəyi əvvəlcədən bilmək lazımdır</h2>
+        <p>Əsas qaydalar, təsdiq prosesi və hesab məlumatları barədə qısa bələdçi.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg></div>
+          <h3>Gündəlik məbləğlər</h3>
+          <p>Hər paketin gündəlik hesablanma məbləği paket kartında göstərilir. Sonrakı hesablamalar gündəlik aparılır.</p>
+        </article>
+        <article class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+          <h3>Ödəniş təsdiqi</h3>
+          <p>Qəbz admin tərəfindən təsdiqləndikdən sonra paket aktivləşir və ilk gündəlik məbləğ balansa yazılır.</p>
+        </article>
+        <article class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Təhlükəsizlik</h3>
+          <p>Şifrələr PBKDF2 ilə heşlənir, sessiya məlumatları qorunan cookie-də saxlanılır.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg></div>
+          <h3>Çıxarış sorğusu</h3>
+          <p>Çıxarış sorğusunu şəxsi hesabınızdan göndərin və statusunu hesab tarixçəsində izləyin.</p>
+        </article>
+        <article class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+          <h3>Hesab tarixçəsi</h3>
+          <p>Paketlər, gündəlik hesablamalar və çıxarış sorğuları şəxsi hesabda göstərilir.</p>
+        </article>
+        <article class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+          <h3>Dəstək kanalı</h3>
+          <p>Suallarınız üçün əlaqə səhifəsindəki müraciət formasından istifadə edə bilərsiniz.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="nece-isleyir" style="background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge">Necə işləyir</span>
+        <h2>3 sadə addımda paketi aktivləşdirin</h2>
+        <p>Ödəniş təsdiqlənəndə ilk gündəlik gəlir məbləği balansa yazılır; sonrakı məbləğlər hər gün hesablanır.</p>
+      </div>
+      <div class="steps">
+        <article class="step-card reveal">
+          <h3>Paketi seçin</h3>
+          <p>Büdcənizə uyğun paketi seçin — 13₼, 30₼, 67₼, 96₼ və ya 200₼. Hər paketin öz gündəlik gəliri var.</p>
+        </article>
+        <article class="step-card reveal reveal-delay-1">
+          <h3>Ödənişi edin</h3>
+          <p>Kart və ya digər ödəniş üsulu ilə paketin dəyərini ödəyin. Ödəniş təsdiqlənəndə paket aktivləşir.</p>
+        </article>
+        <article class="step-card reveal reveal-delay-2">
+          <h3>Gündəlik gəlir yığın</h3>
+          <p>İlk məbləğ ödəniş təsdiqində, sonrakı gündəlik gəlirlər isə hər gün balansınıza yüklənir.</p>
+        </article>
+      </div>
+      <p style="margin-top:22px; text-align:center; font-size:13px; opacity:.7;">Qeyd: ilk gündəlik gəlir məbləği ödəniş təsdiqlənəndə balansa yazılır, sonrakı gəlirlər Bakı vaxtı ilə gündəlik hesablanır. Minimum çıxarış 1₼-dır.</p>
+    </div>
+  </section>
+
+  <!-- ============ PACKAGES ============ -->
+  <section id="paketler">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge">İnvestisiya paketləri</span>
+        <h2>Özünüzə uyğun paketi seçin</h2>
+        <p>Gündəlik gəlir məbləği ödəniş təsdiqlənəndə ilk dəfə balansa yazılır.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <div class="plan-name">Başlanğıc</div>
+          <div class="price">₼13</div>
+          <div class="daily-income">+₼1 / gün</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> İlk gündəlik məbləğ təsdiqdə yazılır</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Çıxarış sorğusu şəxsi hesabdan</li>
+          </ul>
+          <a href="qeydiyyat.html" class="btn btn-primary">Davam et</a>
+        </article>
+        <article class="price-card reveal reveal-delay-1">
+          <div class="plan-name">Standart</div>
+          <div class="price">₼30</div>
+          <div class="daily-income">+₼2 / gün</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> İlk gündəlik məbləğ təsdiqdə yazılır</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Çıxarış sorğusu şəxsi hesabdan</li>
+          </ul>
+          <a href="qeydiyyat.html" class="btn btn-primary">Davam et</a>
+        </article>
+        <article class="price-card reveal reveal-delay-2">
+          <div class="plan-name">Biznes</div>
+          <div class="price">₼67</div>
+          <div class="daily-income">+₼4 / gün</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> İlk gündəlik məbləğ təsdiqdə yazılır</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Çıxarış sorğusu şəxsi hesabdan</li>
+          </ul>
+          <a href="qeydiyyat.html" class="btn btn-primary">Davam et</a>
+        </article>
+        <article class="price-card reveal reveal-delay-3">
+          <div class="plan-name">Premium</div>
+          <div class="price">₼96</div>
+          <div class="daily-income">+₼6 / gün</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> İlk gündəlik məbləğ təsdiqdə yazılır</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Çıxarış sorğusu şəxsi hesabdan</li>
+          </ul>
+          <a href="qeydiyyat.html" class="btn btn-primary">Davam et</a>
+        </article>
+        <article class="price-card reveal">
+          <div class="plan-name">Elit</div>
+          <div class="price">₼200</div>
+          <div class="daily-income">+₼14 / gün</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> İlk gündəlik məbləğ təsdiqdə yazılır</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Çıxarış sorğusu şəxsi hesabdan</li>
+          </ul>
+          <a href="qeydiyyat.html" class="btn btn-primary">Davam et</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMPORTANT INFORMATION ============ -->
+  <section id="reyler" style="background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge">Vacib məlumatlar</span>
+        <h2>Ödənişdən əvvəl qaydaları nəzərdən keçirin</h2>
+        <p>Paket rəqəmləri və əməliyyat qaydaları ilə bağlı əsas məlumatlar.</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card reveal">
+          <span class="info-number">01</span>
+          <h3>Paket məbləğləri</h3>
+          <p>Başlanğıc 1 AZN, Standart 2 AZN, Biznes 4 AZN, Premium 6 AZN və Elit 14 AZN gündəlik hesablanma məbləğinə malikdir. Cari qiymətləri paket kartlarında yoxlayın.</p>
+        </article>
+        <article class="info-card reveal reveal-delay-1">
+          <span class="info-number">02</span>
+          <h3>Təsdiq və hesablanma</h3>
+          <p>İlk gündəlik məbləğ ödəniş təsdiqləndikdə yazılır. Sonrakı məbləğlər Bakı vaxtı ilə gündəlik hesablanır.</p>
+        </article>
+        <article class="info-card reveal reveal-delay-2">
+          <span class="info-number">03</span>
+          <h3>Çıxarış qaydaları</h3>
+          <p>Çıxarış şərtləri, minimum məbləğ və sorğuların emalı qaydası ilə tanış olmaq üçün istifadə şərtlərini oxuyun.</p>
+          <a href="istifade-sertleri.html" class="info-link">İstifadə şərtləri <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="basla">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Qərar verməzdən əvvəl məlumatlanın</h2>
+        <p>Paketləri müqayisə edin və hesablanma, ödəniş və çıxarış qaydalarını nəzərdən keçirin.</p>
+        <div class="cta-actions">
+          <a href="index.html#paketler" class="btn btn-primary btn-lg">Paketləri müqayisə et</a>
+          <a href="istifade-sertleri.html" class="btn btn-ghost btn-lg">İstifadə şərtləri</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">N</span>
+          <span>Nexora</span>
+        </a>
+        <p>Paket qiymətləri, hesablanma qaydaları və hesab məlumatları haqqında ümumi məlumat.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platforma</h4>
+        <a href="index.html#paketler">Paketlər</a>
+        <a href="index.html#nece-isleyir">Necə işləyir</a>
+        <a href="index.html#reyler">Vacib məlumatlar</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Şirkət</h4>
+        <a href="elaqe.html">Əlaqə</a>
+      </div>
+      <div class="footer-col">
+        <h4>Əlaqə</h4>
+        <a href="https://t.me/noname112211" target="_blank" rel="noopener noreferrer">Telegram-da yazın</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Nexora. Bütün hüquqlar qorunur.</p>
+      <p><a href="mexfilik.html">Məxfilik siyasəti</a> &nbsp;·&nbsp; <a href="istifade-sertleri.html">İstifadə şərtləri</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="api-config.js"></script>
+<script src="api.js"></script>
+<script>
+  // Fallback: keep the footer year current even if script.js fails to load.
+  (function () {
+    try {
+      var y = document.getElementById('year');
+      if (y && y.textContent === '2026') y.textContent = String(new Date().getFullYear());
+    } catch (e) { /* no-op */ }
+  })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

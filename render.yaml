@@ -1,0 +1,33 @@
+# Render Blueprint: backend service and persistent SQLite storage.
+services:
+  - type: web
+    name: nexora-backend
+    runtime: node
+    plan: starter
+    rootDir: backend
+    buildCommand: npm ci
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    disk:
+      name: nexora-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/nexora.db
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_BOT_USERNAME
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: TELEGRAM_ADMIN_USER_ID
+        sync: false
+      - key: PAYMENT_CARD_NUMBER
+        sync: false
+      - key: PAYMENT_BANK_NAME
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
